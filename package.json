@@ -1,14 +1,14 @@
 {
-  "name": "blog",
+  "name": "template",
   "version": "0.1.0",
-  "description": "Webpack ES6 SASS",
+  "description": "Gulp + SASS + babel + pug template for building markup",
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/gulp/bin/gulp.js",
     "build": "node ./node_modules/gulp/bin/gulp.js build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Who Am I?",
+  "author": "Igor Onischenko, Oleg Kovalenko",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
