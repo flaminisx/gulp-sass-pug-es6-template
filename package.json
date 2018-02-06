@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "description": "Webpack ES6 SASS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/gulp/bin/gulp.js",
+    "build": "node ./node_modules/gulp/bin/gulp.js build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Who Am I?",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.2.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
