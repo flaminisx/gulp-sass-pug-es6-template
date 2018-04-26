@@ -10,7 +10,8 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync'),
   sourcemaps = require('gulp-sourcemaps'),
   concat = require('gulp-concat'),
-  babel = require('gulp-babel');
+  babel = require('gulp-babel'),
+  webpack = require('webpack-stream');
 
 
 /*
@@ -51,10 +52,7 @@ gulp.task('rebuild', ['pug'], function () {
 gulp.task('js', () =>
     gulp.src(paths.es6 + '/app.js')
         .pipe(sourcemaps.init())
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(concat('bundle.js'))
+        .pipe(webpack(require('./webpack.config.js')))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.js))
         .pipe(browserSync.reload({
