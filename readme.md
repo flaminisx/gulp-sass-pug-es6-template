@@ -9,7 +9,7 @@
 3. `cd %your_project_name%`
 4. `./install.sh`
 
-You can use `npm run dev` for starting browser-sync server or `npm run build` to build assets into _./dist_ folder
+You can use `npm start` for starting browser-sync server or `npm run build` to build assets into _./dist_ folder
 
 ### WARNING!
 
